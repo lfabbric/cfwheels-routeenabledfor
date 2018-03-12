@@ -53,7 +53,7 @@ config/settings.cfm
         enabledForRedirectRoute="http404"
     );
 ```
-
+#### Parameters
 Parameter | Type | Required | Default | Description
 --- | --- | --- | --- | ---
 enabledFor | `string` | false | `all` | String of possible options to check against. If more than one option is required, a comma delimited list can be used. <ul><li>"all" - bypasses check and continues to routed page</li><li>"" - empty string, bypasses check and continues to routed page</li><li>"param1" - a string to compare against, if it is equal to the string, it will continue to the routes page</li><li>"param1,param2" - a list of parameters to check against, if one is found it will continue to the routes page</li></ul>
