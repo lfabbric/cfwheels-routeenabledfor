@@ -1,0 +1,22 @@
+{
+    "name":"CFWheels Routes Enabled For",
+    "version":"0.0.1",
+    "author":"Landon Fabbricino",
+    "location":"lfabbric/cfwheels-routeenabledfor#v0.0.1",
+    "directory":"/plugins/",
+    "createPackageDirectory":true,
+    "packageDirectory":"routeenabledfor",
+    "slug":"link-to-default-title",
+    "type":"cfwheels-plugins",
+    "homepage":"https://github.com/lfabbric/cfwheels-routeenabledfor",
+    "shortDescription":"RouteEnabledFor is middleware solution that adds a level of site-based security restricting access to routes based on application level parameters",
+    "keywords":"security",
+    "private":false,
+    "scripts":{
+        "postVersion":"package set location='lfabbric/cfwheels-routeenabledfor#v`package version`'",
+        "postPublish":"!git push --follow-tags",
+        "patch-release":"bump --patch && publish",
+        "minor-release":"bump --minor && publish",
+        "major-release":"bump --major && publish"
+    }
+}
